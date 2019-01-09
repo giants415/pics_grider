@@ -2,11 +2,14 @@ import React from 'react';
 
 class ImageCard extends React.Component {
   render() {
+    // destructures image prop
+    const { description, urls } = this.props.image;
+
     return (
       <div>
         <img
-          alt={this.props.image.description}
-          src={this.props.image.urls.regular}
+          alt={description}
+          src={regular}
         />
       </div>
     );
